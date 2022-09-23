@@ -1,8 +1,9 @@
 def par(numero):
+    if numero % 2 == 0:  ##ou num = numero % 2 // if num == 0 // return True
+        return True
+    else:
+        return False
 
-
-    return True
-    return False
 
 if __name__ == '__main__':
     nome = input('Como te chamas? ')
