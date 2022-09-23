@@ -1,7 +1,7 @@
 # Isto é um comentário
 
 """
-Este programa implementa funções aritméticas
+Este programa implementa funções aritméticas!
 """
 
 
