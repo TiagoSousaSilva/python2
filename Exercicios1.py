@@ -10,18 +10,37 @@ pede ao utilizador um numero que representa "quantos"
 Mostra aquela quantidade de numeros primos a partir do numero inicial
 """
 
-def primos(num1, num2, op):
-        for primos in range(num1, num2 + 1):
-            if primos > 1:
-                for n in range (2, primos):
-                    if (primos % n) == 0:
+def primos(num1, num2):
+    zeros = 0
+    for n in range(num1, num2 + 1):# sem o -1 o programa começa 1 numero á frente
+        if n > 1:
+            for i in range(2, n):
+                if n % i == 0:
+                    zeros += 1
+    return zeros
+
+
+
+
+
+
+if __name__ == '__main__':
+    continuar = 's'
+    while continuar == 's':
+        num1 = int(input('Insira um número: '))
+        num2 = int(input('Insira um número: '))
+        if primos(num1, num2) == 0:  #o programa tem sempre 1 e se entre o espaço n tiver primos vais sempre para o 'else'
+            print(f'Entre o espaço {num1, num2} não existem numeros primos.')
+        else:
+            print(f'Entre o espaço {num1, num2} existem {primos(num1, num2)} numeros primos.')
+            print()
+        for n in range(num1, num2 + 1):
+            if n > 1:
+                for i in range(2, n):
+                    if (n % i) == 0:
                         break
-                else:
-                    print(primos)
-
-
-while True:
-    Num1 = int(input('Insira o 1ºnum: '))
-    Num2 = int(input('Insira o 2ºnum: '))
-    print(f'Os numeros primos entre {Num1} e {Num2} sao {primos}')
+                    else:
+                        print(n)
+        continuar = input('Quer contunuar? [s, n]')
+    print(f'Adeus!')
 
