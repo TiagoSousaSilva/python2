@@ -11,13 +11,13 @@ Mostra aquela quantidade de numeros primos a partir do numero inicial
 """
 
 def primos(num1, num2):
-    zeros = 0
-    for n in range(num1, num2 + 1):# sem o -1 o programa começa 1 numero á frente
+    zero = 0
+    for n in range(num1, num2 + 1):   # sem o -1 o programa começa 1 numero á frente
         if n > 1:
             for i in range(2, n):
                 if n % i == 0:
-                    zeros += 1
-    return zeros
+                    zero += 1
+    return zero
 
 
 
@@ -39,8 +39,8 @@ if __name__ == '__main__':
                 for i in range(2, n):
                     if (n % i) == 0:
                         break
-                    else:
-                        print(n)
+                else:
+                    print(n)
         continuar = input('Quer contunuar? [s, n]')
     print(f'Adeus!')
 
