@@ -22,5 +22,5 @@ while __name__ == '__main__':
         num1 = int(input('Insira as horas: '))
         num2 = int(input('Insira os preço/hora: '))
         print(f'O salário de {num1} horas é {salario(num1, num2)}')
-    continuar = input('Quer continuar? [s, n] ')
+        continuar = input('Quer continuar? [s, n] ')
     print('Adeus!')
