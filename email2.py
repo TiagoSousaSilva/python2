@@ -27,3 +27,5 @@ if __name__ == '__main__':
         num1 = int(input('Quantos kms tem a distância? '))
         num2 = int(input('Quantos mins demorou a percorrer? '))
         print(f'A velocidade média é {VelMedKM(num1, num2)} K/H e {VelMedM(num1, num2)} M/S')
+        continuar = input('Quer continuar? [s, n] ')
+    print('Adeus!')
