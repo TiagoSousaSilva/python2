@@ -11,7 +11,16 @@ contrário recebe horas extraordinárias as quais são pagas a dobrar.
 def salario(num1, num2):
     if num1 <= 40:
         salario = num1 * num2
-    if num1 >= 40:
-        salario = (num1 - 40)
+    if num1 > 40:
+        salario = ((num1 * num2) - ((num1 - 40) * num2)) + (num1 - 40 * num2 * 2)
 
     return salario
+
+while __name__ == '__main__':
+    continuar = 's'
+    while continuar == 's':
+        num1 = int(input('Insira as horas: '))
+        num2 = int(input('Insira os preço/hora: '))
+        print(f'O salário de {num1} horas é {salario(num1, num2)}')
+    continuar = input('Quer continuar? [s, n] ')
+    print('Adeus!')
