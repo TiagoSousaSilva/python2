@@ -9,14 +9,25 @@ depois de mostrar os numeros diz quantos numeros primos havia
 pede ao utilizador um numero que representa "quantos"
 Mostra aquela quantidade de numeros primos a partir do numero inicial
 """
+"""
+        primo = 0
+        for n in range(num1, num2 + 1):
+            if n > 1:
+                for i in range(2, n):
+                    if (n % i) == 0:
+                        primo += 1
+                else:
+                    print(primo)
+        print(f'primo {primo}')
+"""
 
 def primos(num1, num2):
     zero = 0
-    for n in range(num1, num2 + 1):   # sem o -1 o programa começa 1 numero á frente
-        if n > 1:
-            for i in range(2, n):
-                if n % i == 0:
-                    zero += 1
+    for num in range(num1, num2 + 1):   # sem o -1 o programa começa 1 numero á frente
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    zero =+ 1
     return zero
 
 
