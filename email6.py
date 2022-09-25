@@ -16,4 +16,9 @@ def comparacao(num1, num2, num3):
 while __name__ == '__main__':
     continuar = 's'
     while continuar == 's':
-        num1 = int(input())
+        num1 = int(input('Insira o primeiro numero: '))
+        num2 = int(input('Insira o segundo numero: '))
+        num3 = int(input('Insira o terceiro numero: '))
+        print(f'O numero maior é: {comparacao(num1, num2, num3)}')
+        continuar = input('Quer continuar? [s, n] ')
+    print('Adeus!')
