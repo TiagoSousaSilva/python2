@@ -9,17 +9,29 @@ Após o utilizador ter inserido os 5 valores apresente:
 - A média das vendas
 """
 
-vendas = [0, 0, 0, 0, 0]
-ilhas = ['Faial', 'pico', 'sao_jorge', 'graciosa', 'terceira']
-
 if __name__ == '__main__':
-    continuar = 's'
-    while continuar == 's':
-        for x in range(0, len(ilhas)):
-            vendas[x] = int(input(f'vendas {ilhas[x]}'))
 
+    vendas = [0, 0, 0, 0, 0]
+    ilhas = ['Faial', 'Pico', 'S. Jorge', 'Graciosa', 'Terceira']
 
+    venda_total = 0
+    venda_menor = 0
+    venda_maior = 0
 
+    for x in range(0, len(ilhas)):
+        vendas[x] = int(input(f'Vendas {ilhas[x]}: '))
+        venda_total += vendas[x]
 
-        continuar = input('Quer contunuar? [s, n]')
-    print(f'Adeus!')
+    venda_menor = vendas[0]
+    venda_maior = vendas[0]
+
+    for x in range(0, len(vendas)):
+        if vendas[x] > venda_maior:
+            venda_maior = vendas[x]
+        if vendas[x] < venda_menor:
+            venda_menor = vendas[x]
+
+    print(f'Total de vendas: {vendas_total}')
+    print(f'A menor venda é: {venda_menor}')
+    print(f'A maior venda é: {venda_maior}')
+    print(f'A média é: {venda_total / len(ilhas)}')
