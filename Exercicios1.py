@@ -35,15 +35,17 @@ if __name = '__main__':
     continuar = 's'
     while continuar == 's'
         ini = int(input('Insira o numero inicial '))
-        fin = int(input('Insira o numero final ))
+        fin = int(input('Insira o numero final '))
         primos = 0
-        # TPC Alterar o for para um while
+        # TPC Alterar o for para um while com for dentro ( meu ex) e so com whiles
         for n in range(ini, fin + 1):
             if divisores(n) == 2:
                 primos += 1
         print(f' Entra {ini} e {fim} há {primos} de primos.')
         continuar = input('Repetir [s | n] ')
-    print(f'adeus')"""
+    print(f'adeus')
+"""
+
 
 def primos(num1, num2):
     zero = 0
@@ -62,6 +64,26 @@ def primos(num1, num2):
 if __name__ == '__main__':
     continuar = 's'
     while continuar == 's':
+        print('Bom \ndia')
+        print('Bom \tdia')
+
+        #exemplo nome
+        nome = input('Nome: ')
+        nl = nome.split(' ')
+        print(f'On ome tem {len(nl)} palavras.')
+        print(nl[0])
+
+
+        for n in nl:
+            print(n)
+
+        x = 0
+        while x < len(nl):
+            print(nl[x])
+            x += 1
+
+
+
         num1 = int(input('Insira um número: '))
         num2 = int(input('Insira um número: '))
         print(f'Entre o espaço {num1, num2} existem {primos(num1, num2)} numeros primos.')
