@@ -37,6 +37,7 @@ if __name = '__main__':
         ini = int(input('Insira o numero inicial '))
         fin = int(input('Insira o numero final ))
         primos = 0
+        # TPC Alterar o for para um while
         for n in range(ini, fin + 1):
             if divisores(n) == 2:
                 primos += 1
