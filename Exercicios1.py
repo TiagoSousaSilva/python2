@@ -21,6 +21,29 @@ Mostra aquela quantidade de numeros primos a partir do numero inicial
         print(f'primo {primo}')
 """
 
+"""
+Resolução:
+def divisores(num):
+    zeros = 0
+    for n in range(1, num + 1)
+        if num % n == 0:
+            zeros += 1
+    return zeros
+    
+    
+if __name = '__main__':
+    continuar = 's'
+    while continuar == 's'
+        ini = int(input('Insira o numero inicial '))
+        fin = int(input('Insira o numero final ))
+        primos = 0
+        for n in range(ini, fin + 1):
+            if divisores(n) == 2:
+                primos += 1
+        print(f' Entra {ini} e {fim} há {primos} de primos.')
+        continuar = input('Repetir [s | n] ')
+    print(f'adeus')"""
+
 def primos(num1, num2):
     zero = 0
     for num in range(num1, num2 + 1):   # sem o -1 o programa começa 1 numero á frente
@@ -40,11 +63,8 @@ if __name__ == '__main__':
     while continuar == 's':
         num1 = int(input('Insira um número: '))
         num2 = int(input('Insira um número: '))
-        if primos(num1, num2) == 0:  #o programa tem sempre 1 e se entre o espaço n tiver primos vais sempre para o 'else'
-            print(f'Entre o espaço {num1, num2} não existem numeros primos.')
-        else:
-            print(f'Entre o espaço {num1, num2} existem {primos(num1, num2)} numeros primos.')
-            print()
+        print(f'Entre o espaço {num1, num2} existem {primos(num1, num2)} numeros primos.')
+        print()
         for n in range(num1, num2 + 1):
             if n > 1:
                 for i in range(2, n):
