@@ -9,13 +9,16 @@ Após o utilizador ter inserido os 5 valores apresente:
 - A média das vendas
 """
 
-Vendas = [0, 0, 0, 0, 0]
-Ilhas = ['Faial', 'pico', 'sao jorge', 'graciosa', 'terceira']
+vendas = [0, 0, 0, 0, 0]
+ilhas = ['Faial', 'pico', 'sao_jorge', 'graciosa', 'terceira']
 
 if __name__ == '__main__':
     continuar = 's'
     while continuar == 's':
-        vendas = input(' ')
+        for x in range(0, len(ilhas)):
+            vendas[x] = int(input(f'vendas {ilhas[x]}'))
+
+
 
 
         continuar = input('Quer contunuar? [s, n]')
