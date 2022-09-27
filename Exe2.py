@@ -45,6 +45,7 @@ if __name__ == '__main__':
 
         vogais = "aeiou"
         numeros = "0123456789"
+
         for n in frase:
             if n in numeros:
                 n_numeros += 1

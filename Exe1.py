@@ -31,7 +31,7 @@ if __name__ == '__main__':
         if vendas[x] < venda_menor:
             venda_menor = vendas[x]
 
-    print(f'Total de vendas: {vendas_total}')
+    print(f'Total de vendas: {venda_total}')
     print(f'A menor venda é: {venda_menor}')
     print(f'A maior venda é: {venda_maior}')
     print(f'A média é: {venda_total / len(ilhas)}')
