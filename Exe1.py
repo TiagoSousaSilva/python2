@@ -7,6 +7,9 @@ Após o utilizador ter inserido os 5 valores apresente:
 - O menor valor inserido
 - O maior valor inserido
 - A média das vendas
+
+    - O menor valor inserido assim como as respetivas ilhas
+    - O maior valor inserido assim como as respetivas ilhas
 """
 
 """
@@ -32,29 +35,36 @@ if __name__ == '_main__':
     vendas = declarar_lista(5)
     print(f'Vendas = {vendas}')"""
 
+
 if __name__ == '__main__':
+    continuar = 's'
+    while continuar == 's':
 
-    vendas = [0, 0, 0, 0, 0]
-    ilhas = ['Faial', 'Pico', 'S. Jorge', 'Graciosa', 'Terceira']
+        vendas = [0, 0, 0, 0, 0]
+        ilhas = ['Faial', 'Pico', 'S. Jorge', 'Graciosa', 'Terceira']
 
-    venda_total = 0
-    venda_menor = 0
-    venda_maior = 0
+        venda_total = 0
+        venda_menor = 0
+        venda_maior = 0
 
-    for x in range(0, len(ilhas)):
-        vendas[x] = int(input(f'Vendas {ilhas[x]}: '))
-        venda_total += vendas[x]
+        for x in range(0, len(ilhas)):
+            vendas[x] = int(input(f'Vendas {ilhas[x]}: '))
+            venda_total += vendas[x]
 
-    venda_menor = vendas[0]
-    venda_maior = vendas[0]
+        venda_menor = vendas[0]
+        venda_maior = vendas[0]
 
-    for x in range(1, len(vendas)):
-        if vendas[x] > venda_maior:
-            venda_maior = vendas[x]
-        if vendas[x] < venda_menor:
-            venda_menor = vendas[x]
+        for x in range(1, len(vendas)):
+            if vendas[x] > venda_maior:
+                venda_maior = vendas[x]
+            if vendas[x] < venda_menor:
+                venda_menor = vendas[x]
 
-    print(f'Total de vendas: {venda_total}')
-    print(f'A menor venda é: {venda_menor}')
-    print(f'A maior venda é: {venda_maior}')
-    print(f'A média é: {venda_total / len(ilhas)}')
+
+        print(f'Total de vendas: {venda_total}')
+        print(f'A menor venda é: {venda_menor}')
+        print(f'A maior venda é: {venda_maior}')
+        print(f'A média é: {venda_total / len(ilhas)}')
+
+        continuar = input('Quer contunuar? [s, n]')
+    print(f'Adeus!')

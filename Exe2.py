@@ -8,6 +8,9 @@ Após o utilizador ter inderido a frase apresente:
  - Quantas letras minusculas tem a frase
  - Quantos numeros tem a frase
  - Apresente a frase invertida. Exemplo: A frase é 'Bom dia!' deve dar '!aid moB'
+
+  - Imprima a frase, mas com cada palavra invertida. Por exemplo 'Bom dia!' deve dar 'moB !aid'
+  - Imprima a frase, mas com as maiusculas em minisculo e as minusculas em maiusculas.
 """
 
 
@@ -19,13 +22,19 @@ def conta_vogais(vogais):
 
 """
 
-""" # converter frase para lista, inverter a lista e converter para string
+# converter frase para lista, inverter a lista e converter para string
 def convertor(frase):
     li = list(frase.split(' '))
     li.reverse()
-    li =' '.join(map(str,list))
-    return li
-"""
+    li =' '.join(str(x) for x in li)
+    return li[::-1]
+
+
+def Mudar_case(frase):
+    nova_frase = frase.swapcase()
+
+    return nova_frase
+
 
 def conta_capitais(capitais):
     contar_ma = 0
@@ -80,7 +89,9 @@ if __name__ == '__main__':
 
         print(f'A frase invertida é: {frase_invertida(frase)}')
 
-        #print(convertor(frase))
+        print(f'A frase com as maiusculas em minisculo e as minusculas em maiusculas é: {Mudar_case(frase)}')
+
+        print(f'A segunda frase convertida é: {convertor(frase)}')
 
         continuar = input('Quer contunuar? [s, n]')
     print(f'Adeus!')
