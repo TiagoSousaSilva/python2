@@ -11,6 +11,22 @@ Após o utilizador ter inderido a frase apresente:
 """
 
 
+"""
+def conta_vogais(vogais):
+    contar_vogais = 0
+    for n in vogais:
+        ... (meter a frase toda em lower case)
+
+"""
+
+""" # converter frase para lista, inverter a lista e converter para string
+def convertor(frase):
+    li = list(frase.split(' '))
+    li.reverse()
+    li =' '.join(map(str,list))
+    return li
+"""
+
 def conta_capitais(capitais):
     contar_ma = 0
     for n in capitais:
@@ -40,10 +56,10 @@ if __name__ == '__main__':
         frase = input('Escreva uma frase: ')
         print(f'O comprimento da frase é: {len(frase)}')
 
-        nl = frase.split(' ')
+        nl = frase.split(' ')  #prox exe
         print(f'A frase tem {len(nl)} palavras')
 
-        vogais = "aeiou"
+        vogais = "aeiouAEIOU"
         numeros = "0123456789"
 
         for n in frase:
@@ -63,6 +79,8 @@ if __name__ == '__main__':
         print(f'A frase tem {n_numeros} numeros')
 
         print(f'A frase invertida é: {frase_invertida(frase)}')
+
+        #print(convertor(frase))
 
         continuar = input('Quer contunuar? [s, n]')
     print(f'Adeus!')
