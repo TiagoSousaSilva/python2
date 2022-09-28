@@ -4,9 +4,9 @@
 2. 1º 2ºnº. for ou while?
 Soma/ 2º num tem de ser maior q o 1º/ temos q ter numeros(leras n pode dar erros)
 
-3(eu).escreve uma frase com mais de 10 caracteres: (input) *
+3. Escreve uma frase com mais de 10 caracteres: (input) *
  - Nao permitir mais do q 2 caracteres consecutivos iguais
- - Quantos caracteres de cada ( quantos As por ex.)
+ - Quantos caracteres de cada (quantos A por exemplo)
  - A frase termina obrigatóriamente com um . ! ? (parte da validação) *
 """
 
