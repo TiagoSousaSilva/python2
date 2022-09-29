@@ -62,5 +62,5 @@ if __name__ == '__main__':
             #print(f'vendas[{x}][{y}]= {vendas[x][y]}')
             total_vendas = total_vendas + vendas[x][y]
             total_linha = total_linha + vendas[x][y]
-        print(f'total_linha={total_linha}') #1 linha é a soma da 1º lista
+        print(f'total_linha={total_linha}') #1 linha é a soma da 1º lista/2º lista
     print(f'total_vendas={total_vendas}')
