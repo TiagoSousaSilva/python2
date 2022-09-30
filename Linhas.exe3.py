@@ -5,7 +5,7 @@ Outra maneira de fazer o "organizador(lista)"
 Troqquei = True
 while troquei:
     troquei = false
-    for x in range(4):
+    for x in range(4): (tem que ser 4 pra n comparar o ultimo numero com um numero fora da lista)
         if brndas[x]>vendas[x+1]:
             troquei = true
 """
