@@ -18,8 +18,6 @@ if __name__ == '__main__':
 
 
 ## resoluçao
-
-
     for x in range(2):
         print(x)
 

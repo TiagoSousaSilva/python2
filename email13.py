@@ -16,8 +16,12 @@ Num -> 8
 8 x 10 = 80
 """
 
-def tabuada(num1):
-    for n in range(1, 10 + 1):
-      total = num1 * n
 
-    return total
+if __name__ == '__main__':
+    x = range(1, 10 + 1)
+    numero = int(input('Insira um numero: '))
+    ini = int(input('Inicio da tabuada: '))
+    fim = int(input('Fim da tabuada: '))
+
+    for x in range(ini, fim + 1):
+        print(f'{numero} x {x} = {numero*x}')
