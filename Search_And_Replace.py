@@ -18,8 +18,8 @@ def frase_lista(frase):
 
 if __name__ == '__main__':
     continuar = 's' or 'S'
-    frase = input('Insira a sua frase: ')
     while continuar == 's' or 'S':
+        frase = input('Insira a sua frase: ')
         palavra = input('Insira a palavra para substituir a outra: ')
         mudar = input('Insira a palavra para substituir: ')
 
