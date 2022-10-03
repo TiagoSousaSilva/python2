@@ -43,9 +43,12 @@ if __name__ == '__main__':
                 numeros.append(n)
             if n == -1:
                 break
+
         numeros = ''.join(str(x) for x in numeros)
+
         numeros_int = int(numeros)
         print(f'O número é: {numeros_int}')
+
         divisores = divisao(numeros_int)
         if divisores >= 2:
             print(f'O numero {numeros_int} é um numero composto')
