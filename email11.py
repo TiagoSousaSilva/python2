@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
         numero = numero[::-1]
 
-        print(numero)
+        print(numero)   
 
         continuar = input('Quer continuar? [S, N]')
         if continuar == 'N':
