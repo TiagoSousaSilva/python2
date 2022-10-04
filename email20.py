@@ -12,3 +12,16 @@ Escreva um programa em Python escreve o seguinte:
 Os valores do primeiro termo da multiplicação e o resultado devem ser
 calculados pelo seu programa.
 """
+def conta(numero):
+    () * 8 + max(length)
+
+if __name__ == '__main__':
+    continuar = 's' or 'S'
+    while continuar == 's' or 'S':
+
+        comprimento = float(input('Insira o comprimento da função: '))
+
+
+        continuar = input('Quer continuar? [S, N]')
+        if continuar == 'N' or 'n':
+            break
